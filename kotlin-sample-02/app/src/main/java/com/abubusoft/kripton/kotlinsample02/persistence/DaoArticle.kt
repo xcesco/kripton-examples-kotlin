@@ -5,7 +5,7 @@ import com.abubusoft.kripton.android.annotation.BindDao
 import com.abubusoft.kripton.android.annotation.BindSqlDynamicWhere
 import com.abubusoft.kripton.android.annotation.BindSqlSelect
 import com.abubusoft.kripton.android.annotation.BindSqlUpdate
-import com.abubusoft.kripton.example.rssreader.service.model.Article
+import com.abubusoft.kripton.kotlinsample02.model.Article
 
 @BindDao(Article::class)
 interface DaoArticle {

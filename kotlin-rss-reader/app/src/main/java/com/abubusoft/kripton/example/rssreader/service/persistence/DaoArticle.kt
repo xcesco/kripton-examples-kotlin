@@ -1,7 +1,6 @@
 package com.abubusoft.kripton.example.rssreader.service.persistence
 
 import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
 import com.abubusoft.kripton.android.annotation.BindDao
 import com.abubusoft.kripton.android.annotation.BindSqlDynamicWhere
 import com.abubusoft.kripton.android.annotation.BindSqlSelect

@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders
 import android.content.res.Resources
 import android.graphics.Rect
 import android.os.Bundle
+import android.support.annotation.NonNull
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CollapsingToolbarLayout
 import android.support.v7.app.AppCompatActivity
@@ -178,7 +179,8 @@ class MainActivity : AppCompatActivity() {
      */
     inner class GridSpacingItemDecoration(private val spanCount: Int, private val spacing: Int, private val includeEdge: Boolean) : RecyclerView.ItemDecoration() {
 
-        override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State?) {
+        @Override
+        override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
             val position = parent.getChildAdapterPosition(view) // item position
             val column = position % spanCount // item column
 
